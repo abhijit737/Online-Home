@@ -1,36 +1,116 @@
 <nav class="navbar navbar-expand-lg navbar-primary bg-info fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">E-Home</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="/"
+            >Buy <span class="sr-only">(current)></span></a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{exact:true}"
+            routerLinkActive="active"
+            routerLink="/rent-property"
+            >Rent</a
+          >
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            routerLink="/add-property"
+            >List Property
+          </a
+          >
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+      
+        <ul class="nav navbar-nav">
+          <li *ngIf="!loggedin()" class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="user/register"
+              routerLinkActive="active"
+              >Register</a>  
+          </li>
+
+          <li *ngIf="!loggedin()" class="nav-item">
+            <a
+             class="nav-link" routerLink="user/login"
+              routerLinkActive="active"
+              >Login</a>
+          </li>
+
+
+
+
+
+          <div *ngIf="loggedin()" class="dropdown ml-50" dropdown>
+            <a href="#" class="dropdown-toggle text-light bg-success" dropdownToggle (click)="false">
+                Welcome,Click Here 
+            </a>  
+            <div class="dropdown-menu" *dropdownMenu>
+                <a href="#"class="dropdown-item">
+                  <i class="fas fa-tachometer-alt"></i> View Dashboard</a>
+                <a href="#" class="dropdown-item">
+                  <i class="far fa-user-circle"></i> My Profile</a>
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-key"></i> Change Password</a>
+                 <a (click)='onLogout()' class="dropdown-item">
+                  <i class="fas fa-sign-out-alt"></i> Logout</a> 
+            </div>
+          </div> 
+
+
+
+
+<!-- 
+          <div *ngIf="loggedin()" class="dropdown mr-5" (click)="toggleDropdown()">
+            <a href="#" class="dropdown-toggle text-light">
+              Welcome
+            </a>
+            <div class="dropdown-menu" *ngIf="isDropdownOpen">
+              <a href="#" class="dropdown-item" (click)="viewDashboard()">
+                <i class="fas fa-tachometer-alt"></i> View Dashboard
+              </a>
+              <a href="#" class="dropdown-item" (click)="viewProfile()">
+                <i class="far fa-user-circle"></i> My Profile
+              </a>
+              <a href="#" class="dropdown-item" (click)="changePassword()">
+                <i class="fas fa-key"></i> Change Password
+              </a>
+              <a href="#" class="dropdown-item" (click)="onLogout()">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </div>
+
+           -->
+
+
+
+
+
+        </ul>
+      </div>
+
+     
     </div>
-  </div>
+  
 </nav>

@@ -1,0 +1,55 @@
+[
+    {
+    "Id":1,
+    "SellRent":1,
+    "Type":"Home",
+    "Price":12000,
+    "Image":"prop1"
+  },
+{
+  "Id":2,
+  "SellRent":2,
+  "Type":"Villa",
+  "Price":13000,
+  "Image":"prop2"
+
+},
+{
+  "Id":3,
+  "SellRent":1,
+  "Type":"House",
+  "Price":12500,
+  "Image":"prop3"
+
+},
+
+{
+  "Id":4,
+  "SellRent":1,
+  "Type":"Villa",
+  "Price":11110
+},
+{
+  "Id":5,
+  "SellRent":1,
+  "Type":"resort",
+  "Price":9000,
+  "Image":"prop5"
+},
+{
+  "Id":6,
+  "SellRent":1,
+  "Type":"More Bunglow",
+  "Price":13000,
+  "Image":"prop6"
+
+},
+{
+  "Id":7,
+  "SellRent":1,
+  "Type":"Villa",
+  "Price":567880
+
+}
+
+]
