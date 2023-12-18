@@ -26,6 +26,5 @@ created service of authontication.
 
 added property card component.
 
-![Project Image](https://example.com/image.jpg)
-
+![Home screen](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/localhost%20home%20screen.png)
 ![Project Image](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/home%20login.png)
