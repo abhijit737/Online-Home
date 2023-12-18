@@ -28,16 +28,31 @@ added property card component.
 
 
 
+
+
+
+
 Home Screen
 ![Home screen](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/localhost%20home%20screen.png)
+
 
 
 Register Screen
 ![Register Screen](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/home%20register.png)
 
+
+
 Login Screen
 ![Project Image](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/home%20login.png)
 
 
+
+
 List Property
 ![List Property](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/list%20property.png)
+
+
+
+Rent Property
+![Rent Property](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/rented%20property.png)
+TRent 
