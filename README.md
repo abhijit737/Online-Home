@@ -27,32 +27,32 @@ created service of authontication.
 added property card component.
 
 
+working .....
 
 
 
 
-
-Home Screen
+*Home Screen*
 ![Home screen](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/localhost%20home%20screen.png)
 
 
 
-Register Screen
+*Register Screen*
 ![Register Screen](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/home%20register.png)
 
 
 
-Login Screen
+*Login Screen*
 ![Project Image](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/home%20login.png)
 
 
 
 
-List Property
+*List Property*
 ![List Property](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/list%20property.png)
 
 
 
-Rent Property
+*Rent Property*
 ![Rent Property](https://github.com/abhijit737/Online-Home/blob/main/Online%20Home%20Preview/rented%20property.png)
-TRent 
+
